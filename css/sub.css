@@ -1,31 +1,73 @@
 header {height:200px; }
 
-#mid {width: 1200px; height:5000px; margin: 0 auto; background-color: rebeccapurple;}
-#pnav {width:1200px; height:40px;  position: sticky; top:0; background-color: blueviolet; margin: 0 auto;z-index: 10; display: flex; justify-content:center; align-items: center;}
-#na {background-color: red;width: 500px; height: 40px;margin: 0; }
+#mid {width: 1200px; height:15000px; margin: 0 auto; background-color: rebeccapurple;}
+#pnav {width:1200px; height:40px;  position: sticky; top:0; margin: 0 auto;z-index: 10; display: flex; justify-content:center; align-items: center;}
+#na {width: 500px; height: 40px;margin: 0; }
 #pnav ul {display: flex; justify-content: space-around; align-items: center; margin-top: 5px;}
 #pnav li{float:left;  font-size:20px; color:#f2f2f2; margin: 0; }
 #pnav ul li a:hover{color:rgb(133, 133, 133)}
 
+.sub {width:1200px; height: 9085px;  margin: 0 auto; display: flex; align-items: flex-start;}
+.prod {width:900px; height:9085px; }
+#tprod {width:900px; height:550px; display: flex;justify-content: center; align-items: center;}
+#timg {width:870px; height: 500px; }
+#bprod {width:900px; height: 100px; display: flex;justify-content: space-around;}
+.bimg {width:150px; height: 91px; align-self: center;}
+#cata {width: 900px; height:6000px; }
+#cata h1 {text-align: center; line-height: 2em;color: #555151;}
+#cata h3 {text-align: center; line-height: 2em;color: #555151;}
+#cata p {text-align: center; line-height: 2em;color: #555151;}
+.proimg {width: 900px;}
+.proimg:nth-of-type(1) {margin-top: 80px;}
+.proimg:nth-of-type(1)>h1 {margin-top: 100px;}
+.proimg:nth-of-type(2) {margin-top: 40px;}
+.proimg:nth-of-type(2)>h1 {margin-top: 80px;}
+.proimg:nth-of-type(3) {margin: 30px 0;}
+.proimg:nth-of-type(3)>h1:nth-of-type(1) {margin-top: 80px;}
+.proimg:nth-of-type(4) {display: flex;flex-wrap: wrap; }
+.proimg:nth-of-type(4)  {flex-direction: row; }
+.cp {width:160px; height: 100px;  float: left; margin-left: 16px;}
+.proimg:nth-of-type(5) {position: relative;}
+.proimg:nth-of-type(5)>p {position: absolute; top:450px; right:30px;}
+.proimg:nth-of-type(5)>h1 {position: absolute; top:350px; right:235px;}
+.proimg:nth-of-type(6) {position: relative;}
+.proimg:nth-of-type(6)>p:nth-of-type(1) {position: absolute; top:180px; left:20px;}
+.proimg:nth-of-type(6)>p:nth-of-type(2) {position: absolute; top:270px; left:20px;}
+.proimg:nth-of-type(6)>h1 {position: absolute; top:70px; left:20px;}
+.proimg:nth-of-type(7) {margin-top: 30px;}
+.proimg:nth-of-type(7)>h1 {margin-top: 70px;}
+.proimg:nth-of-type(10) {margin-top: 100px;}
+#det {display: flex;justify-content: center;}
+caption {font-size: 23px;color:#555151}
+#det>table td {padding: 10px 5px 10px 15px; ; color:#555151;}
+#det>table {border-collapse: collapse; border-top: 1px solid #555151;border-bottom: 1px solid #555151; }
+#det>table .even{background: #f2f2f2;}
 
-.sub {width:1200px; height: 3000px;  margin: 0 auto; display: flex; align-items: flex-start;}
-.prod {width:900px; height:3000px; background-color: aqua; }
-.side {width:300px; height:630px;  align-self: flex-start; position: sticky; top:100px;}
 
 
-.side {padding:10px}
+
+.side {width:300px; height:630px;  align-self: flex-start; position: sticky; top:100px;padding:10px}
 hr {color:#555151; margin: 7px 0px;} 
 .side p table {color:#555151; line-height: 1.5em;}
 .side>table {padding: 5px;}
 .side td {padding: 10px;}
 .side select {margin-left: 30px;}
 .opt{margin: 15px 0 10px 38px;}
-.btn {background-color: white; width:75px; height: 40px; border: #555151 2px solid; margin: 20px 0 0 10px; border-radius: 3px;}
+.btn {background-color: white; width:70px; height: 40px; border: #555151 2px solid; margin: 20px 0 0 10px; border-radius: 3px;}
 .btn:hover {cursor: pointer;}
-.btn:nth-of-type(3) {width:100px; background-color: #555151; color:white}
+.btn:nth-of-type(3) {width:95px; background-color: #555151; color:white}
 
 
+#detail {width:1200px; height:3000px; margin: 0 auto; background-color: antiquewhite;}
+#deli {display: flex; justify-content: center;}
+#deli>table {border: 1px solid #555151;border-collapse:collapse ;}
+#deli>table>caption {margin: 60px 0 30px 0;}
+#deli>table li {list-style: circle;}
+#deli>table th{border-bottom: 1px solid #555151; padding-left: 5px;}
+#deli>table td{border-bottom: 1px solid #555151;padding: 20px 0px 20px 40px; font-size: 17px;}
 
-
-
-#detail {width:1200px; height:1000px; margin: 0 auto; background-color: antiquewhite;}
+#review {width:1200px ; height: 1000px; background-color: gainsboro; }
+#text {width:1000px;height:70px;}
+.but {width: 90px; height: 70px; background-color: white; border: 1px solid #555151; border-radius: 3px;}
+.but:nth-of-type(3) {background-color: #555151; color: #f2f2f2;}
+.but:hover {cursor: pointer;}
