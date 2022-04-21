@@ -1,0 +1,31 @@
+header {height:200px; }
+
+#mid {width: 1200px; height:5000px; margin: 0 auto; background-color: rebeccapurple;}
+#pnav {width:1200px; height:40px;  position: sticky; top:0; background-color: blueviolet; margin: 0 auto;z-index: 10; display: flex; justify-content:center; align-items: center;}
+#na {background-color: red;width: 500px; height: 40px;margin: 0; }
+#pnav ul {display: flex; justify-content: space-around; align-items: center; margin-top: 5px;}
+#pnav li{float:left;  font-size:20px; color:#f2f2f2; margin: 0; }
+#pnav ul li a:hover{color:rgb(133, 133, 133)}
+
+
+.sub {width:1200px; height: 3000px;  margin: 0 auto; display: flex; align-items: flex-start;}
+.prod {width:900px; height:3000px; background-color: aqua; }
+.side {width:300px; height:630px;  align-self: flex-start; position: sticky; top:100px;}
+
+
+.side {padding:10px}
+hr {color:#555151; margin: 7px 0px;} 
+.side p table {color:#555151; line-height: 1.5em;}
+.side>table {padding: 5px;}
+.side td {padding: 10px;}
+.side select {margin-left: 30px;}
+.opt{margin: 15px 0 10px 38px;}
+.btn {background-color: white; width:75px; height: 40px; border: #555151 2px solid; margin: 20px 0 0 10px; border-radius: 3px;}
+.btn:hover {cursor: pointer;}
+.btn:nth-of-type(3) {width:100px; background-color: #555151; color:white}
+
+
+
+
+
+#detail {width:1200px; height:1000px; margin: 0 auto; background-color: antiquewhite;}
