@@ -8,7 +8,7 @@ header {width:100%; height: 800px;  margin:0 auto; position: relative;background
 #logo {width: 140px; height: 45px; float:left;margin: 75px 0px 0px 50px;}
 nav{width: 800px; height: 50px; float:right; margin: 70px 0px 0px 0px; }
 nav li{float:left; margin:23px 40px 0 0; font-size:25px; color:#f2f2f2; }
-nav ul li a:hover{color:rgb(133, 133, 133)}
+nav ul li a:hover{color:black}
 nav div{width: 25px;height: 25px; float:right; margin:25px 3px 0px 15px;}
 
 

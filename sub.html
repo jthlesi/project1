@@ -7,12 +7,56 @@
     <title>Sub</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.bimg:nth-of-type(1)').click(function(){
+                $("#timg").fadeIn();
+                $("#timg1").hide();
+                $("#timg2").hide();
+                $("#timg3").hide();
+                $("#timg4").hide();
+            });
+            $('.bimg:nth-of-type(2)').click(function(){
+                $("#timg").hide();
+                $("#timg1").fadeIn();
+                $("#timg2").hide();
+                $("#timg3").hide();
+                $("#timg4").hide();
+            });
+            $('.bimg:nth-of-type(3)').click(function(){
+                $("#timg").hide();
+                $("#timg1").hide();
+                $("#timg2").fadeIn();
+                $("#timg3").hide();
+                $("#timg4").hide();
+            });
+            $('.bimg:nth-of-type(4)').click(function(){
+                $("#timg").hide();
+                $("#timg1").hide();
+                $("#timg2").hide();
+                $("#timg3").fadeIn();
+                $("#timg4").hide();
+            });
+            $('.bimg:nth-of-type(5)').click(function(){
+                $("#timg").hide();
+                $("#timg1").hide();
+                $("#timg2").hide();
+                $("#timg3").hide();
+                $("#timg4").fadeIn();
+            });
+        })
+
+
+
+    </script>
+
 </head>
 <body>
     <header>
 
         <div id="main">
-            <div id="logo"><a href="#"><img src="img/logo.PNG" alt=""></a></div>
+            <div id="logo"><a href="index.html"><img src="img/logo.PNG" alt=""></a></div>
             <nav>
                 <ul>
                     <li><a href="#"><b>HOME</b></a></li>
@@ -31,10 +75,10 @@
         <div id="pnav">
             <nav id="na">
                 <ul>
-                    <li><a href="#">상품정보</a></li>
-                    <li><a href="#">배송정보</a></li>
-                    <li><a href="#">리뷰</a></li>
-                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#tprod">상품정보</a></li>
+                    <li><a href="#deli">배송정보</a></li>
+                    <li><a href="#review">리뷰</a></li>
+                    <li><a href="#qna">Q&A</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,13 +87,17 @@
             <div class="prod">
                 <div id="tprod">
                     <div id="timg"><img src="simg/timg1.jpg" alt=""></div>
+                    <div id="timg1"><img src="simg/timg3.jpg" alt=""></div>
+                    <div id="timg2"><img src="simg/timg5.jpg" alt=""></div>
+                    <div id="timg3"><img src="simg/timg2.jpg" alt=""></div>
+                    <div id="timg4"><img src="simg/timg4.jpg" alt=""></div>
                 </div>
                 <div id="bprod">
-                    <div class="bimg"><img src="simg/timg1.jpg" alt=""></div>
-                    <div class="bimg"><img src="simg/timg3.jpg" alt=""></div>
-                    <div class="bimg"><img src="simg/timg5.jpg" alt=""></div>
-                    <div class="bimg"><img src="simg/timg2.jpg" alt=""></div>
-                    <div class="bimg"><img src="simg/timg4.jpg" alt=""></div>
+                    <div class="bimg"><a href="#bimg1"><img src="simg/timg1.jpg" alt=""></a></div>
+                    <div class="bimg"><a href="#bimg2"><img src="simg/timg3.jpg" alt=""></a></div>
+                    <div class="bimg"><a href="#bimg3"><img src="simg/timg5.jpg" alt=""></a></div>
+                    <div class="bimg"><a href="#bimg4"><img src="simg/timg2.jpg" alt=""></a></div>
+                    <div class="bimg"><a href="#bimg5"><img src="simg/timg4.jpg" alt=""></a></div>
                 </div>
                 <div id="cata">
                     <div class="proimg"><img src="simg/pro1.jpg" alt="">
@@ -70,7 +118,7 @@
                     </div>
                     <div class="proimg"><img src="simg/pro4.jpg" alt="">
                         <div class="cp">
-                            <p>Indipink<br>인디핑크</p>
+                            <p>Indi pink<br>인디핑크</p>
                         </div>
                         <div class="cp">
                             <p>Navy<br>네이비</p>
@@ -263,7 +311,7 @@
                                 <ul>
                                     <li>주문일로부터 평균 3-7일 이후 배송이 가능합니다</li>
                                     <li>일요일 및 공휴일에는 배송이 불가능합니다.</li>
-                                    <li>일부 제품은 주문제작 상픔으로 배송기간이 다소 소요될 수 있습니다.</li>
+                                    <li>일부 제품은 주문제작 상품으로 배송기간이 다소 소요될 수 있습니다.</li>
                                     <li>주문폭주, 일시적 재고부족, 기상이변, 악천후, 천재지변 등에 의한 배송지연이 발생할 수 있습니다.</li>
                                 </ul>
                             </td>
@@ -274,7 +322,7 @@
                                 <ul>
                                     <li>사다리차 이용 또는 엘레베이터 이용료 등 설치현장의 특수성으로 인한 추가비용은 고객부담입니다.</li>
                                     <li style="color:red">저층의 경우에도 입구 및 엘리베이터가 협소하여 물품이동이 어려운 경우 사다리차를 사용할 수 있습니다.</li>
-                                    <li>배송일정은 지정이 가능하나, 배송시간은 지정이 불가합니다. (배송시간 또한 지역 및 교통상황에 따라 달라질 수 있습니다.)</li>
+                                    <li>배송일정은 지정이 가능하나, 배송시간은 지정이 불가합니다. (배송시간 또한 지역 및 교통상황에 따라 달라질 수 있습니다)</li>
                                     <li>상품이 배송되기 전 설치를 원하시는 공간을 미리 확보 및 정돈 부탁드립니다.</li>
                                     <li>전문시공기사가 직접 방문하여 조립/설치를 해드리나, 기존가구의 이동 및 철거는 불가하오니 양해바랍니다.</li>
                                 </ul>
@@ -291,6 +339,16 @@
                                     <li>정상설치 완료 전, 고객 변심으로 인한 교환/반품 시에는 왕복배송비 + 고객부담금이 발생됩니다.</li>
                                     <li>조립 및 설치 이후에는 재판매가 불가능하므로, 교환/반품이 불가합니다.</li>
                                     <li>매트리스, 매트리스 커버 등의 제품은 위생 관리상 포장 개봉 이후에는 교환/반품이 불가합니다.</li>
+                                </ul>
+                            </td>
+                            </tr>
+                            <tr>
+                            <th>배송취소 및<br> 환불안내</th>
+                            <td>
+                                <ul>
+                                    <li>결제하신 상품의 주문취소는 고객센터(1544-6400)로 접수 부탁드립니다.</li>
+                                    <li style="color:red">배송 당일 배송취소는 불가능합니다.</li>
+                                    <li>주문자와 입금자명이 다를경우 처리지연이 될 수 있습니다.(별도의 요청서류가 발생할 수 있습니다)</li>
                                 </ul>
                             </td>
                         </tr>
@@ -320,7 +378,7 @@
                 
                 <h2>리뷰 보기</h2>
                 <hr>
-                <table style="border:1px solid">
+                <table >
                     <tr>
                         <td class="star">★★★★★</td>
                         <td rowspan="3" class="reid">작성자 : 김민*</td>
@@ -331,7 +389,7 @@
                         
                     </tr>
                     <tr>
-                        <td class="ri"><img src="simg/re1.jpeg" alt=""></td>
+                        <td class="ri"><a href=""><img src="simg/re1.jpeg" alt=""></a></td>
                         
                     </tr>
                     <tr>
@@ -342,10 +400,10 @@
                         <td class="rt">소파는 예쁜 지다인도 디자인이지만 무엇보다 편안해야 오래 쓸 수 있다고 생각하는데 한달간 사용하면서 정자세로 앉아있든 ,발을 뻗든, 길게 누워 있든 어떤자세로도 편히 쉴 수 있었어요.</td>
                     </tr>
                     <tr>
-                        <td class="ri"><img src="simg/re2.jpg" alt=""><img src="simg/re2-1.jpg" alt=""><img src="simg/re2-2.jpg" alt=""></td>
+                        <td class="ri"><a href=""><img src="simg/re2.jpg" alt=""></a><a href=""><img src="simg/re2-1.jpg" alt=""></a><a href=""><img src="simg/re2-2.jpg" alt=""></a></td>
                     </tr>
                     <tr>
-                        <td class="star">★★★★★</td>
+                        <td class="star">★★★★☆</td>
                         <td rowspan="3" class="reid">작성자 : 윤민*</td>
                     </tr>
                     <tr>
@@ -356,22 +414,142 @@
                     </tr>
                     <tr>
                         <td class="star">★★★★★</td>
-                        <td rowspan="3" class="reid">nt*****</td>
+                        <td rowspan="3" class="reid">작성자 : nt*****</td>
                     </tr>
                     <tr>
                         <td class="rt">우리집이랑 찰떡이네요<br>
                         패브릭 소파를 알아보던중에 색상에 반해 다른 색은 눈에 들어오지 않더라구요 온라인 사진으로만 보다가 실물을 보니 더 새롭네요.</td>
                     </tr>
                     <tr>
-                        <td class="ri"><img src="simg/re4.jpg" alt=""><img src="simg/re4-1.jpg" alt=""></td>
+                        <td class="ri"><a href=""><img src="simg/re4.jpg" alt=""><img src="simg/re4-1.jpg" alt=""></a></td>
                     </tr>
 
 
 
 
                 </table>
+                <ul id="list2">
+                    <li><a href="" ><b>[1]</b></a></li>
+                    <li><a href="">[2]</a></li>
+                    <li><a href="">[3]</a></li>
+                    <li><a href="">[4]</a></li>
+                    <li><a href="">[5]</a></li>
+                    <li><a href="">[Next]</a></li>
+                    <li><a href="">[End]</a></li>
+                </ul>
+            </div>
+
+            <div id="qna">
+                <h2>Q & A</h2>
+                <hr>
+                <table >
+                    <thead>
+                        <th>번호</th>
+                        
+                        <th></th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>19</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >상품 문의</a></td>
+                        <td>최선*</td>
+                        <td>2022/04/22</td>
+                        <td>답변대기</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >배송 문의</a></td>
+                        <td>ka*******</td>
+                        <td>2022/04/20</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td></td>
+                        <td><a href="" >색상 문의</a></td>
+                        <td>김민*</td>
+                        <td>2022/04/18</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >카드 할부 문의</a></td>
+                        <td>윤민*</td>
+                        <td>2022/04/16</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >상품 문의</a></td>
+                        <td>nt*****</td>
+                        <td>2022/04/16</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >설치 관련 문의</a></td>
+                        <td>di****</td>
+                        <td>2022/04/11</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >상품 문의</a></td>
+                        <td>au***</td>
+                        <td>2022/04/09</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><img src="simg/lock.png" alt=""></td>
+                        <td><a href="" >크기 문의</a></td>
+                        <td>kl******</td>
+                        <td>2022/04/08</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td><a href="" >재질 변경 문의</a></td>
+                        <td>ki*******</td>
+                        <td>3022/04/05</td>
+                        <td>답변완료</td>
+                    </tr>
+                </tbody>
+
+
+
+
+                </table>
+
+
+                <ul id="qna2">
+                    <li><a href="" ><b>[1]</b></a></li>
+                    <li><a href="">[2]</a></li>
+                    <li><a href="">[3]</a></li>
+                    <li><a href="">[Next]</a></li>
+                    <li><a href="">[End]</a></li>
+                </ul>
+
+
+
 
             </div>
+
+
+
+
+
 
         </div>
 
