@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,45 +10,46 @@
     <link rel="stylesheet" href="css/sub.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
-        $(function(){
-            $('.bimg:nth-of-type(1)').click(function(){
-                $("#timg").fadeIn();
+        $(function () {
+            $('.bimg:nth-of-type(1)').hover(function () {
+                $("#timg").show();
                 $("#timg1").hide();
                 $("#timg2").hide();
                 $("#timg3").hide();
                 $("#timg4").hide();
             });
-            $('.bimg:nth-of-type(2)').click(function(){
+            $('.bimg:nth-of-type(2)').hover(function () {
                 $("#timg").hide();
-                $("#timg1").fadeIn();
+                $("#timg1").show();
                 $("#timg2").hide();
                 $("#timg3").hide();
                 $("#timg4").hide();
             });
-            $('.bimg:nth-of-type(3)').click(function(){
+            $('.bimg:nth-of-type(3)').hover(function () {
                 $("#timg").hide();
                 $("#timg1").hide();
-                $("#timg2").fadeIn();
+                $("#timg2").show();
                 $("#timg3").hide();
                 $("#timg4").hide();
             });
-            $('.bimg:nth-of-type(4)').click(function(){
+            $('.bimg:nth-of-type(4)').hover(function () {
                 $("#timg").hide();
                 $("#timg1").hide();
                 $("#timg2").hide();
-                $("#timg3").fadeIn();
+                $("#timg3").show();
                 $("#timg4").hide();
             });
-            $('.bimg:nth-of-type(5)').click(function(){
+            $('.bimg:nth-of-type(5)').hover(function () {
                 $("#timg").hide();
                 $("#timg1").hide();
                 $("#timg2").hide();
                 $("#timg3").hide();
-                $("#timg4").fadeIn();
+                $("#timg4").show();
             });
         })
     </script>
 </head>
+
 <body>
     <header>
         <div id="main">
@@ -407,13 +409,13 @@
                 <table>
                     <thead>
                         <tr>
-                        <th>번호</th>
-                        <th></th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                        <th></th>
-                    </tr>
+                            <th>번호</th>
+                            <th></th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th></th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -549,4 +551,5 @@
         </div>
     </footer>
 </body>
+
 </html>
