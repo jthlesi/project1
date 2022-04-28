@@ -77,7 +77,7 @@ hr {color:#555151; margin: 7px 0px;}
 #review>hr {margin: 10px 0; color:#555151;}
 #text {width:870px; height:70px; box-sizing: border-box; }
 #input {width:300px; height:70px;float:right; display: flex; flex-wrap: wrap; justify-content: space-between;align-content:space-between;}
-#input>select {color:#555151;width:140px; height:32x; box-sizing: border-box;}
+#input>select {color:#555151;width:140px; height:32px; box-sizing: border-box;}
 .but {width: 140px; height: 32px; background-color: white; border: 1px solid #555151; border-radius: 3px; }
 .but:nth-of-type(2) {background-color: #555151; color: #f2f2f2;width:300px; }
 .but:hover {cursor: pointer;}
@@ -115,7 +115,7 @@ hr {color:#555151; margin: 7px 0px;}
 #qna>table a {color: #555151;}
 #qna2 {display: flex; justify-content: center;margin-top: 10px;}
 #qna2>li>a:hover {color:black}
-#qna2>li>a {color:#555151; margin-left: 6px; };
+#qna2>li>a {color:#555151; margin-left: 6px; }
 
 
 
