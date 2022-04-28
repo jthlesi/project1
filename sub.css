@@ -64,7 +64,7 @@ hr {color:#555151; margin: 7px 0px;}
 .btn:nth-of-type(3) {width:95px; background-color: #555151; color:white}
 
 
-#detail {width:1200px; height:3000px; margin: 0 auto; }
+#detail {width:1200px; height:2000px; margin: 0 auto; }
 #deli {display: flex; justify-content: center; color: #555151;}
 #deli>table {border: 1px solid #555151;border-collapse:collapse ;}
 #deli>table>caption {margin: 60px 0 30px 0;}
